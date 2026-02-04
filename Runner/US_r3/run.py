@@ -1,6 +1,15 @@
 import warnings
 import argparse
+
+import sys
 import os
+
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
+project_root = os.path.abspath(os.path.join(current_dir, '..', '..'))
+
+if project_root not in sys.path:
+    sys.path.append(project_root)
 from tqdm import tqdm
 from data_provider.load_dataset import load_dataset
 from scripts.utils import load_adj,create_save_path,print_args,save_experiment_result
@@ -15,7 +24,7 @@ os.environ["TORCH_DISTRIBUTED_DEBUG"] = "OFF"
 os.environ["NCCL_DEBUG"] = "WARN"
 os.environ["CUDA_LAUNCH_BLOCKING"] = "1"
 warnings.filterwarnings('ignore')
-# 强制清理所有GPU内存
+
 torch.cuda.empty_cache()
 gc.collect()
 parser=argparse.ArgumentParser()

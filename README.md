@@ -19,12 +19,15 @@ pip install -r requirements.txt
 
 ~~~
 #ChinaNorth
-python ./ChinaNorth/run.py --model GeneAIS --target 0
+cd ChinaNorth
+python run.py --model GeneAIS --target 0
 
 #ChinaSouth
-python ./ChinaSouth/run.py --model GeneAIS --target 0
+cd ChinaSouth
+python run.py --model GeneAIS --target 0
 
 #US_r3
-python ./US_r3/run.py --model GeneAIS --target 0
+cd US_r3
+python run.py --model GeneAIS --target 0
 ~~~
 
