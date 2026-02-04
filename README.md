@@ -1,6 +1,6 @@
-# GeneAIS
+# GenAISF
 
-This is a PyTorch implementation of the paper: **GeneAIS: A Generalizable Alignment-Interaction Framework for Station Weather Forecasting with Foundation Models.**
+This is a PyTorch implementation of the paper: **GenAISF: A Generalizable Alignment-Interaction Framework for Station Weather Forecasting with Foundation Models.**
 
 ## Requirements
 
@@ -20,14 +20,14 @@ pip install -r requirements.txt
 ~~~
 #ChinaNorth
 cd ChinaNorth
-python run.py --model GeneAIS --target 0
+python run.py --model GenAISF --target 0
 
 #ChinaSouth
 cd ChinaSouth
-python run.py --model GeneAIS --target 0
+python run.py --model GenAISF --target 0
 
 #US_r3
 cd US_r3
-python run.py --model GeneAIS --target 0
+python run.py --model GenAISF --target 0
 ~~~
 
